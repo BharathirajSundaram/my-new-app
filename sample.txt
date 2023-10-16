@@ -1,0 +1,10 @@
+FSD course
+
+This is my first course
+
+Steps to be followed:
+1) git init
+2) git add .(to add all files) or git add sample.txt sample1.txt sample2.txt
+
+3) git commit -m "commit message"
+4) git push
