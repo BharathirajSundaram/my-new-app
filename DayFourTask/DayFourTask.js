@@ -19,5 +19,19 @@ let output = str.split(' ')
 //console.log(output);
 
 
+//c. Sum of all numbers in an array
+
+
+let inputArr = [1,2,3,4,5,6,7,8,9,10]
+
+let addition=inputArr.reduce((sum,value)=>{
+    return sum +=value;
+    
+},0);
+console.log(addition);
+
+
+
+
 
 
