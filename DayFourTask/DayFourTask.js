@@ -48,7 +48,7 @@ let result = myArray.filter((word)=>{
     return p === word ? word : "";
 })
 console.log(result)
-*/
+
 
 
 //f. Return median of two sorted arrays of the same size.
@@ -74,4 +74,10 @@ console.log( ar3.indexOf(m1)+" "+ar3.indexOf(m2))
 
 let result= (value1+value2)/2;
 console.log(result)
+*/
+//g. remove duplicates from an array
 
+let names = ["Mike","Matt","Adam","Adam","Jenny","Mike"];
+let num = [1,7,2,2,3,4,4,5,6,6,7,8,9];
+let uniqueValues =names.filter((value, index, array) => array.indexOf(value) === index);
+console.log(uniqueValues.sort())
