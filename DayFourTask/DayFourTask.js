@@ -38,7 +38,7 @@ let primeNum = inputArr1.filter((value) => {
 });
 console.log(primeNum);
 
-*/
+
 //e. Return all the palindromes in an array
 
 let myArray = ['racecar','pop','dad','same','name','sas','bob']
@@ -47,5 +47,31 @@ let result = myArray.filter((word)=>{
     var p = word.split("").reverse().join("");
     return p === word ? word : "";
 })
+console.log(result)
+*/
+
+
+//f. Return median of two sorted arrays of the same size.
+
+var ar1 = [1,12,15,26,38,50];
+var ar2= [2,13,17,30,45,20];
+
+var ar3= ar1.concat(ar2);
+ar3=ar3.sort((a,b)=>{
+    return a-b
+});
+console.log(ar3);
+
+let length = ar3.length;
+
+let m1= length/2;
+let m2= m1-1;
+let value1= ar3[m1];
+let value2= ar3[m2];
+
+console.log(m1+ ">>>>>>>>>"+length+">>>>>>>>>>>"+m2)
+console.log( ar3.indexOf(m1)+" "+ar3.indexOf(m2))
+
+let result= (value1+value2)/2;
 console.log(result)
 
