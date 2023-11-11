@@ -1,4 +1,4 @@
-//a. Print odd numbers in an array
+/*//a. Print odd numbers in an array
 
 let arr = [];
 for (let i = 1; i < 100; i += 2) {
@@ -38,4 +38,14 @@ let primeNum = inputArr1.filter((value) => {
 });
 console.log(primeNum);
 
+*/
+//e. Return all the palindromes in an array
+
+let myArray = ['racecar','pop','dad','same','name','sas','bob']
+
+let result = myArray.filter((word)=>{
+    var p = word.split("").reverse().join("");
+    return p === word ? word : "";
+})
+console.log(result)
 
