@@ -1,3 +1,4 @@
+// https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
 class movie{
     constructor(title,studio,rating){
         this.title=title;
