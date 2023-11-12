@@ -137,6 +137,9 @@ let primeNum = inputArr1.filter((value) => {
 console.log(primeNum);
 
 
+//=========================================================================================
+
+
 //e. Return all the palindromes in an array
 
 let myArray = ['racecar','pop','dad','same','name','sas','bob']
