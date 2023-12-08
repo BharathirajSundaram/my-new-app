@@ -62,3 +62,7 @@ function createPagination(totalPages, page){
   element.innerHTML = liTag; //add li tag inside ul tag
   return liTag; //reurn the li tag
 }
+
+fetch('./pagination.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
