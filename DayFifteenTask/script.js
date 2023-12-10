@@ -61,8 +61,56 @@ function createPagination(totalPages, page){
   }
   element.innerHTML = liTag; //add li tag inside ul tag
   return liTag; //reurn the li tag
+
+  
+
 }
 
-fetch('./pagination.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+
+
+var pageLists = fetch('./pagination.json').then((response) => response.json())
+    // .then((json) => {console.log(json[0])})
+    // .then((json) => document.createElement('divId').innerText = json[0].name);
+
+let http = new XMLHttpRequest();    
+
+http.open('GET','./pagination.json');
+http.send();
+http.onload= () => {
+  if(http.status==200){
+    let resBody= http.response;
+
+
+
+
+    let resType = typeof resBody;
+    let jsonObj= JSON.parse(resBody);
+    console.log(typeof jsonObj)
+    console.log(resBody)
+    console.log(resType)
+    
+
+
+    
+let dataList=document.createElement("div");
+dataList.setAttribute('id','data-table');
+
+dataList.innerText='<table><tr><th>'+item.id+'</th></tr></table>';
+    
+for (const item of jsonObj) {
+      console.log(item.id,">>>>>>>>>>>>",item.name,">>>>>>>>>>>>",item.email )
+      
+    }
+
+  }
+}
+
+
+
+console.log(pageLists);
+  for(let index=0;index<pageLists.length;index++){
+    html+='<li>response.json</li>';
+   }
+
+  let el=  document.createElement('list');
+  el.appendChild ='<li>${pageList[index]}</li>';
