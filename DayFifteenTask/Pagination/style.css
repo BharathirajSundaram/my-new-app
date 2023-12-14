@@ -34,7 +34,7 @@
     text-transform: uppercase;
     transform: rotate(1turn);
     border: 1px solid rgb(0, 0, 0,0.1);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 2px 2px 2px 2px;
   }
   table {
     padding-bottom: 20px;
